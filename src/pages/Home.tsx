@@ -11,7 +11,7 @@ const Home = () => {
       <motion.section
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        className="pt-24 pb-16 px-4 bg-gradient-to-br from-purple-50 to-pink-50"
+        className="pt-24 pb-16 px-4"
       >
         <div className="container  text-center h-screen flex flex-col justify-center items-center">
           <motion.h1
@@ -36,8 +36,8 @@ const Home = () => {
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.4 }}
             onClick={() => navigate("/events")}
-            className="bg-purple-600 text-white px-8 py-4 rounded-full text-lg font-semibold
-                     hover:bg-purple-700 transition-colors shadow-lg "
+            className="bg-blue-500 text-white px-8 py-4 rounded-full text-lg font-semibold
+                     hover:bg-blue-600 transition-colors shadow-lg "
           >
             Explore Events
           </motion.button>
@@ -48,19 +48,19 @@ const Home = () => {
               <div className="grid md:grid-cols-3 gap-8">
                 {[
                   {
-                    icon: <Users className="h-12 w-12 text-purple-600" />,
+                    icon: <Users className="h-12 w-12 text-blue-500" />,
                     title: "Community Building",
                     description:
                       "Connect with like-minded individuals and build lasting relationships.",
                   },
                   {
-                    icon: <Calendar className="h-12 w-12 text-purple-600" />,
+                    icon: <Calendar className="h-12 w-12 text-blue-500" />,
                     title: "Diverse Events",
                     description:
                       "Participate in a wide range of religious, social, and charitable events.",
                   },
                   {
-                    icon: <Heart className="h-12 w-12 text-purple-600" />,
+                    icon: <Heart className="h-12 w-12 text-blue-500" />,
                     title: "Support Network",
                     description:
                       "Find support and understanding in our inclusive community.",

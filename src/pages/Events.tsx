@@ -74,7 +74,7 @@ const Events = () => {
             <select
               value={selectedCategory}
               onChange={(e) => setSelectedCategory(e.target.value)}
-              className="px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500"
+              className="px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
             >
               <option value="all">All Categories</option>
               {categories.map((category) => (
@@ -86,7 +86,7 @@ const Events = () => {
 
             <button
               onClick={() => setShowForm(true)}
-              className="flex items-center gap-2 bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition-colors"
+              className="flex items-center gap-2 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-colors"
             >
               <Plus size={20} />
               Add Event
@@ -105,7 +105,7 @@ const Events = () => {
             >
               <div className="p-6">
                 <div className="flex items-center justify-between mb-4">
-                  <span className="px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm">
+                  <span className="px-3 py-1 bg-blue-100 text-blue-500 rounded-full text-sm">
                     {event.category}
                   </span>
                 </div>
@@ -147,7 +147,7 @@ const Events = () => {
                       onChange={(e) =>
                         setNewEvent({ ...newEvent, title: e.target.value })
                       }
-                      className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-purple-500 focus:ring-purple-500"
+                      className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
                     />
                   </div>
                   <div>
@@ -161,7 +161,7 @@ const Events = () => {
                       onChange={(e) =>
                         setNewEvent({ ...newEvent, date: e.target.value })
                       }
-                      className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-purple-500 focus:ring-purple-500"
+                      className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
                     />
                   </div>
                   <div>
@@ -175,7 +175,7 @@ const Events = () => {
                       onChange={(e) =>
                         setNewEvent({ ...newEvent, location: e.target.value })
                       }
-                      className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-purple-500 focus:ring-purple-500"
+                      className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
                     />
                   </div>
                   <div>
@@ -187,7 +187,7 @@ const Events = () => {
                       onChange={(e) =>
                         setNewEvent({ ...newEvent, category: e.target.value })
                       }
-                      className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-purple-500 focus:ring-purple-500"
+                      className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
                     >
                       {categories.map((category) => (
                         <option key={category} value={category}>
@@ -209,7 +209,7 @@ const Events = () => {
                           description: e.target.value,
                         })
                       }
-                      className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-purple-500 focus:ring-purple-500"
+                      className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
                       rows={3}
                     />
                   </div>
@@ -224,7 +224,7 @@ const Events = () => {
                   </button>
                   <button
                     type="submit"
-                    className="px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700"
+                    className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
                   >
                     Create Event
                   </button>
